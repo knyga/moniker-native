@@ -1,14 +1,16 @@
-var Assert = require('assert'),
-    M = require('../lib/moniker');
+var chai = require('chai');
+var assert = chai.assert;
+var expect = chai.expect;
+var Moniker = require('../lib/moniker');
 
-module.exports = {
-  'the default generator works': function() {
-    Assert.equal(typeof M.choose(), 'string');
-  },
+describe('Moniker', function() {
+	it('generates string', function() {
+		expect(Moniker.choose()).to.be.a('string');
+	});
 
-  'names are random': function() {
-    var names = M.generator([M.adjective, M.noun], { maxSize: 7 });
-    Assert.equal(typeof names.choose(), 'string');
-    Assert.notEqual(names.choose(), names.choose());
-  }
-};
+	it('generates string with template', function() {
+		var names = Moniker.generator([Moniker.adjective, Moniker.noun], { maxSize: 7 });
+		expect(names.choose()).to.be.a('string');
+		expect(names.choose()).to.not.equal(names.choose());
+	});
+});
