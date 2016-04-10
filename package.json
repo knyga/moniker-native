@@ -3,6 +3,7 @@
 	"version": "0.1.4",
 	"description": "Generate random names",
 	"author": "Ben Weaver <ben@orangesoda.net>",
+	"homepage": "https://github.com/knyga/moniker-native",
 	"contributors": [
 		{
 			"name": "Oleksandr Knyga",
