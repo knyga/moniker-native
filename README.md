@@ -1,4 +1,4 @@
-# Moniker #
+# Moniker-native #
 
 A random name generator for Node.js. Could be used with React Native.
 
@@ -6,7 +6,7 @@ A random name generator for Node.js. Could be used with React Native.
 
 Moniker provides a default adjective/noun generator. Use it like this:
 
-    var Moniker = require('moniker');
+    var Moniker = require('moniker-native');
     console.log(Moniker.choose());
     // Example output: murky-hands
 
@@ -14,7 +14,7 @@ You can also make a custom generator. Generators create random names
 using dictionaries. Moniker has built-in `noun`, `verb`, and
 `adjective` dictionaries, or you can add your own.
 
-    var Moniker = require('moniker');
+    var Moniker = require('moniker-native');
     var names = Moniker.generator([Moniker.adjective, Moniker.noun]);
     console.log(names.choose());
 
@@ -22,7 +22,7 @@ using dictionaries. Moniker has built-in `noun`, `verb`, and
 
 Install Moniker using NPM:
 
-    npm install moniker
+    npm install moniker-native
 
 ## API ##
 
