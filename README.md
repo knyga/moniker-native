@@ -1,6 +1,6 @@
 # Moniker #
 
-A random name generator for Node.js.
+A random name generator for Node.js. Could be used with React Native.
 
 ## Synopsis ##
 
