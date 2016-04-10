@@ -1,8 +1,14 @@
 {
-	"name": "moniker",
+	"name": "moniker-native",
 	"version": "0.1.2",
-	"description": "Generate random names.",
+	"description": "Generate random names",
 	"author": "Ben Weaver <ben@orangesoda.net>",
+	"contributors": [
+		{
+			"name": "Oleksandr Knyga",
+			"email" : "oleksandrknyga@gmail.com"
+		}
+	],
 	"main": "./lib/moniker",
 	"devDependencies": {
 		"chai": "^3.5.0",
